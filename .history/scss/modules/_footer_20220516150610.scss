@@ -1,0 +1,97 @@
+footer {
+    background-color: $c-white;
+    [class^="col-"] {
+        display: flex;
+        justify-content: space-between;
+        padding-top: $spacing-20;
+        padding-bottom: $spacing-150;
+        padding-left: $spacing-25;
+        padding-right: $spacing-25;
+    }
+    .footer-navigation {
+        height: 20px;
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                margin-right: 130px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    display: inline-block;
+                    font-family: $f-medium;
+
+                }
+            }
+        }
+    }
+    .footer-language {
+        position: relative;
+        top: -8px;
+        height: 20px;
+        .toggle-switch {
+            .label-a {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    @media only screen and (max-width: $d-tablet-portrait) {
+        [class^="col-"] {
+            padding-left: $spacing-15;
+        }
+        .footer-navigation {
+            width: 70%;
+            ul {
+                li {
+                    width: 40%;
+                    margin-right: 0;
+                    margin-bottom: 9px;
+                    a{
+                        font-size: 0.9rem;
+                        line-height: 1.05rem;
+                    }
+                }
+            }
+        }
+        .footer-language {
+            .toggle-switch {
+                .label-a {
+                    font-size: 1.15rem;
+                    line-height: 1.208rem;
+                }
+            }
+        }
+
+    }
+    @media only screen and (max-width: $d-mobile) {
+        [class^="col-"] {
+            padding-left: $spacing-10;
+            padding-right: $spacing-10;
+            padding-top: $spacing-10;
+
+
+        }
+        .footer-navigation {
+            ul{
+                li {
+                    a {
+                        font-size: 0.75rem;
+                        line-height: 0.788rem;
+                    }
+                }
+            }
+        }
+        .footer-language {
+            top: 0;
+            .toggle-switch {
+                .label-a {
+                    font-size: 1.05rem;
+                }
+            }
+        }
+
+
+    }
+}

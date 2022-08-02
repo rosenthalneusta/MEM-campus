@@ -1,0 +1,297 @@
+    .container-accordion {
+        padding-bottom: $spacing-100;
+
+        .headline {
+            padding-top: $spacing-90;
+            padding-bottom: $spacing-10;
+            padding-left: 0;
+            padding-right: 0;
+
+            h1 {
+                font-size: 5rem;
+                line-height: 4.75rem;
+                display: inline-block;
+            }
+        }
+
+        .col-lg-12 {
+            padding: 0 $spacing-20;
+
+            &:last-of-type {}
+        }
+
+        &.bg-primary {
+            .content-accordion {
+                .accordion-container {
+                    .cta {
+                        .button {
+                            &.button-extended {
+                                background-color: $c-primary-dark;
+
+                                &:before {
+                                    background-image: url(../img/button-verbindung-bright-dark.svg);
+
+                                }
+
+                                &:after {
+                                    background-color: $c-primary-dark;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: $d-tablet-portrait) {
+            .col-lg-12 {
+                padding: 0 $spacing-15;
+            }
+
+            .headline {
+                h1 {
+                    font-size: 3.75rem;
+                    line-height: 3.6rem;
+                }
+            }
+        }
+
+        @media only screen and (max-width: $d-mobile) {
+            .col-lg-12 {
+                padding: 0 $spacing-10;
+            }
+
+            .headline {
+                padding-left: 0;
+                padding-top: $spacing-70;
+
+                h1 {
+                    font-size: 3rem;
+                    line-height: 2.85rem;
+                }
+            }
+        }
+    }
+
+    .content-accordion {
+        padding-left: 0;
+        padding-right: 0;
+        @include clearit;
+        border-top: 1px solid $c-grey;
+
+        &:last-of-type {
+            border-bottom: 1px solid $c-grey;
+        }
+
+        .accordion-trigger {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: $spacing-20 0 $spacing-20 5px;
+            cursor: pointer;
+
+            h3,h4 {
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                font-family: $f-medium;
+                max-width: calc(100% - 150px);
+
+            }
+
+            .btn-accordion {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-family: $f-medium;
+
+                &:after {
+                    position: relative;
+                    top: 3px;
+                    content: '';
+                    background-image: url(../img/icons/icon-plus-black.svg);
+                    width: 19px;
+                    height: 19px;
+                    display: inline-block;
+                    margin-left: $spacing-80;
+                    transition: $transition-02;
+                }
+            }
+        }
+
+        &.accordion-active {
+            .accordion-trigger {
+                //border-bottom: none;
+            }
+
+            .btn-accordion {
+                &:after {
+                    transform: rotate(45deg);
+                    transition: $transition-02;
+                }
+            }
+        }
+
+        .accordion-container {
+            display: none;
+
+            .accordion-content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+
+            .text {
+                padding-top: $spacing-40;
+                padding-bottom: 0;
+                padding-left: $spacing-10;
+                p {
+          
+                }
+
+                .button.cta-med {
+                    background-color: $c-white;
+                    position: absolute;
+                    bottom: -5px;
+
+                    &:hover {
+                        background-color: $c-black;
+                    }
+                }
+            }
+
+            .cta {
+                padding-right: 0;
+                text-align: right;
+
+                .button {
+                    &.button-extended {
+                        margin-bottom: 38px;
+                        margin-right: 38px;
+
+                        &:after {
+                            width: 38px;
+                            height: 38px;
+                            right: -38px;
+                            bottom: -38px;
+                        }
+
+                        .button-container {
+                            min-height: 185px;
+                            min-width: 0;
+                            max-width: 425px;
+                            text-align: left;
+
+                            .button-label {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: $d-tablet-portrait) {
+            .accordion-trigger {
+                h3, h4 {
+                    font-size: 1.15rem;
+                    line-height: 1.208rem;
+                }
+
+                .btn-accordion {
+                    &:after {
+                        margin-left: $spacing-30;
+                    }
+                }
+
+            }
+
+            .accordion-container {
+                .cta {
+                    .button.button-extended {
+                        .button-container {
+                            max-width: 256px;
+
+                            .button-label {
+                                font-size: 1rem;
+                                line-height: 1.5rem;
+                            }
+                        }
+
+                    }
+                }
+
+                .accordion-content {
+                    .text {
+                        p {
+                            font-size: .8rem;
+                            line-height: .95rem;
+                            padding-right: $spacing-100;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        @media only screen and (max-width: $d-mobile) {
+            .accordion-trigger {
+                padding: 20px 0 10px 0px;
+                h3,h4 {
+                    font-size: 1.05rem;
+                    line-height: 1.103rem;
+                    max-width: calc(100% - 60px);
+                }
+
+                .btn-accordion {
+                    width: 30px;
+                    text-indent: -999px;
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+
+            .accordion-container {
+                .accordion-content {
+                    .text {
+                        padding-top: $spacing-20;
+                        padding-left: 0;
+
+                        p {
+                            padding-right: 0;
+                            font-size: .8rem;
+                            line-height: .95rem;
+                        }
+                    }
+
+                    .cta {
+                        .button.button-extended {
+                            margin-bottom: 28px;
+                            margin-right: 28px;
+                            padding-right: $spacing-25;
+
+                            &:after {
+                                width: 28px;
+                                height: 28px;
+                                right: -28px;
+                                bottom: -28px;
+                            }
+
+                            .button-container {
+                                max-width: 100%;
+                                min-height: 130px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }

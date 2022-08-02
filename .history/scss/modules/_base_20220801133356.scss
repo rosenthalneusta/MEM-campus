@@ -1,0 +1,22 @@
+body {
+    &.no-scroll {
+        overflow: hidden;
+        touch-action: none;
+        // -webkit-overflow-scrolling: none;
+        // overscroll-behavior: contain;
+    }
+}
+
+main {
+    background-color: $c-white;
+    width: calc(100% - 350px);
+    margin-left: 350px;
+    &.menu-open {
+        transform: translateX(320px);
+        transition: $transition-03;
+        transition-delay: .2s;
+
+    }
+}
+
+

@@ -1,0 +1,19 @@
+    @media (max-height: 910px) and (min-width: 1100px) {}
+    /* ipad portrait */
+    @media (max-height: 768px) and (max-width: 1024px) {}
+    /* ipad landscape */
+    @media (max-height: 1024px) and (max-width: 768px) {}
+    
+    @media only screen and (max-width: 1620px) {}
+    
+    @media only screen and (max-width: 1300px) {}
+    
+    @media only screen and (max-width: 1200px) {}
+    
+    @media only screen and (max-width: 1024px) {}
+    
+    @media only screen and (max-width: 768px) {}
+    /* smartphone large */
+    @media only screen and (max-width: 660px) {}
+    /* smartphone small */
+    @media only screen and (max-width: 330px) {}

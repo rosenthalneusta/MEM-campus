@@ -1,0 +1,376 @@
+    /* inputs */
+    
+    input {
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    input:focus,
+    input:active,
+    input:focus-within,
+    button:focus,
+    button:active,
+    button:focus-within {
+        border: none;
+        outline: 0;
+        box-shadow: none;
+    }
+    /* custom checkbox */
+    
+    .container-checkbox {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        a {
+            text-decoration: underline;
+        }
+        input {
+            position: absolute;
+            cursor: pointer;
+            left: 0;
+            top: 0;
+        }
+        input:checked~.checkmark {
+            background-color: $c-white;
+        }
+        input:checked~.checkmark:after {
+            display: block;
+        }
+        .checkmark {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: $c-white;
+            border-radius: 15px;
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+            &:after {
+                left: 6px;
+                top: 6px;
+                width: 8px;
+                height: 8px;
+                border-radius: 10px;
+                background-color: $c-black;
+            }
+        }
+        &:hover input~.checkmark {
+            background-color: $c-white;
+        }
+    }
+    /* radio button */
+    /* Customize the label (the container) */
+    
+    .container-radio {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        input {
+            position: absolute;
+            cursor: pointer;
+            left: 0;
+            top: 0;
+        }
+        input:checked~.checkmark {
+            background-color: #2196F3;
+        }
+        input:checked~.checkmark:after {
+            display: block;
+        }
+        .checkmark {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: $c-white;
+            border-radius: 50%;
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+            &:after {
+                top: 6px;
+                left: 6px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: $c-black;
+            }
+        }
+        &:hover input~.checkmark {
+            background-color: $c-white;
+        }
+    }
+    /* toggle switch */
+    /* The switch - the box around the slider */
+    
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 39px;
+        height: 20px;
+        margin: 0 4px;
+    }
+    /* Hide default HTML checkbox */
+    
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    /* The slider */
+    
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $c-grey-ui;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    input:checked+.slider {
+        background-color: $c-grey-ui;
+    }
+    
+    input:focus+.slider {
+        box-shadow: none;
+    }
+    
+    input:checked+.slider:before {
+        -webkit-transform: translateX(17px);
+        -ms-transform: translateX(17px);
+        transform: translateX(17px);
+    }
+    /* Rounded sliders */
+    
+    .slider.round {
+        border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    /* buttons */
+    
+    .button {
+        position: relative;
+        padding: $spacing-15 $spacing-20;
+        background-color: $c-white;
+        display: inline-block;
+        margin-bottom: $spacing-25;
+        margin-right: $spacing-25;
+        outline: 0;
+        box-shadow: none;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 0px 35px rgba(0, 0, 0, 0);
+        transition: 0.25s ease;
+        transition-property: box-shadow, border-radius;
+        &:before {
+            position: absolute;
+            content: '';
+            background-image: url(../img/button-verbindung-bright.svg);
+            background-image: url(../img/button-verbindung-white.svg);
+            right: -9px;
+            bottom: -9px;
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            right: -25px;
+            bottom: -25px;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            background-color: $c-white;
+            transition: 0.25s ease;
+            transition-property: box-shadow, border-radius;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            min-width: 195px;
+        }
+        .button-label {
+            position: relative;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            display: inline-block;
+            font-family: $f-medium;
+        }
+        .icon {
+            transition: $transition-02;
+        }
+        &:hover {
+            background-color: $c-primary;
+            border-radius: 10px 10px 0 10px;
+            transition-property: box-shadow, border-radius;
+            box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.08);
+            transition: 0.25s ease;
+            transition-property: box-shadow, border-radius;
+            &:before {
+                background-image: url(../img/button-verbindung-bright.svg);
+            }
+            &:after {
+                background-color: $c-primary;
+                border-radius: 10px 10px 10px 10px;
+                transition: 0.25s ease;
+                transition-property: box-shadow, border-radius;
+                box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.08);
+            }
+            .icon {
+                transform: translateX(3px);
+                transition: $transition-02;
+                &.icon-arrow-bottom-black {
+                    transform: translateY(3px);
+                }
+            }
+        }
+        &.button-extended {
+            .button-container {
+                //min-width: 428px;
+                flex-wrap: wrap;
+                align-content: space-between;
+                height: 100%;
+                min-width: 428px;
+                .button-text {
+                    display: block;
+                    width: 100%;
+                    font-size: 1.4rem;
+                    font-family: $f-medium;
+                    margin-bottom: $spacing-40;
+                }
+            }
+            .button-container_ {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &.button-download {
+            //min-width: 428px;
+            min-height: 125px;
+        }
+        &.button-grey {
+            background-color: $c-cta-grey;
+            &:before {
+                background-image: url(../img/button-verbindung-grey.svg);
+            }
+            &:after {
+                background-color: $c-cta-grey;
+            }
+            &:hover {
+                background-color: $c-primary;
+                &:before {
+                    background-image: url(../img/button-verbindung-bright.svg);
+                }
+                &:after {
+                    background-color: $c-primary;
+                }
+            }
+        }
+        @media only screen and (max-width: $d-tablet-portrait) {
+            padding: $spacing-10 $spacing-15;
+
+            &.button-extended {
+                .button-container {
+                    .button-text {
+                        font-size: 1.05rem;
+                        line-height: 1.103rem;
+                    }
+                    .button-label {
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                    }
+                    .icon {
+                        position: relative;
+                        top: 5px;
+                    }
+                }
+            }
+            .button-container {
+                .button-text {
+                    font-size: 1.05rem;
+                    line-height: 1.103rem;
+                }
+                .button-label {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+                .icon {
+                    position: relative;
+                    top: 5px;
+                }
+            }
+
+        }
+        @media only screen and (max-width: $d-mobile) {
+            .button-container {
+                min-width: 250px;
+                .button-label {
+                    font-size: 0.9rem;
+                    line-height: 0.945rem;
+                    top: 3px;
+                }
+            }
+
+
+
+        }
+    }
+    
+    .link-extern {
+        position: relative;
+        padding-right: 25px;
+        line-height: 1rem;
+        &:after {
+            position: relative;
+            margin-left: $spacing-15;
+            content: '';
+            height: 17.92px;
+            width: 18.48px;
+            display: inline-block;
+            background-size: 100% auto;
+            background-image: url(../img/icons/icon-arrow-top-right-black.svg);
+        }
+    }
+    /* Kontaktformular */

@@ -1,0 +1,9 @@
+.top-bar {
+    position: fixed;
+    height: 350px;
+    width: calc(100% - 350px);
+    z-index: 7;
+    background-color: $c-white;
+    box-shadow: 0 0 19px 0 rgba(0,0,0,0.24);
+
+}

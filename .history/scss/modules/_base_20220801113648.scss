@@ -1,0 +1,16 @@
+body {
+    &.no-scroll {
+        overflow: hidden;
+        touch-action: none;
+        // -webkit-overflow-scrolling: none;
+        // overscroll-behavior: contain;
+    }
+}
+
+main {
+    background-color: $c-white;
+    width: calc(100% - 350px);
+    margin-left: 250px;
+}
+
+

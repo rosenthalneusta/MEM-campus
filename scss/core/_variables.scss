@@ -1,0 +1,81 @@
+/*
+  *    Spacings
+  */
+
+$spacing-0: 0px;
+$spacing-10: 10px;
+$spacing-15: 15px;
+$spacing-20: 20px;
+$spacing-25: 25px;
+$spacing-30: 30px;
+$spacing-35: 35px;
+$spacing-40: 40px;
+$spacing-45: 45px;
+$spacing-50: 50px;
+$spacing-60: 60px;
+$spacing-65: 65px;
+$spacing-70: 70px;
+$spacing-75: 75px;
+$spacing-80: 80px;
+$spacing-85: 85px;
+$spacing-90: 90px;
+$spacing-95: 95px;
+$spacing-100: 100px;
+$spacing-120: 120px;
+$spacing-130: 130px;
+$spacing-140: 140px;
+$spacing-150: 150px;
+$spacing-160: 160px;
+$spacing-170: 170px;
+// $spacer: (
+//   1200px: 10px,
+//   1000px: 15px,
+//   800px: 20px,
+// );
+// @each $width, $margin in $spacer {
+//   @media screen and (max-width: $width) {
+//     .element {
+//       margin-top: $margin;
+//     }
+//   }
+// }
+.spacer-10 {
+    height: $spacing-10;
+}
+
+.spacer-20 {
+    height: $spacing-20;
+}
+
+.spacer-30 {
+    height: $spacing-30;
+}
+
+.spacer-40 {
+    height: $spacing-40;
+}
+
+.spacer-60 {
+    height: $spacing-60;
+}
+
+.spacer-80 {
+    height: $spacing-80;
+}
+
+.spacer-100 {
+    height: $spacing-100;
+}
+.spacer-120 {
+    height: $spacing-120;
+}
+
+/*
+ *	grid
+ */
+
+%clearfix:after {
+    display: block;
+    clear: both;
+    content: '';
+}

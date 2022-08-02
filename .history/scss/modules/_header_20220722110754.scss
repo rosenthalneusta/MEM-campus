@@ -1,0 +1,20 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 350px;
+    background-color: $c-white;
+    box-shadow: 0 0 19px 0 rgba(0,0,0,0.24);
+    .header-top {
+        background-color: $c-black;
+        height: 180px;
+        width: 100%;
+        padding: 40px;
+    }
+    .header-profile {
+        padding: 24px 40px;
+    }
+
+
+}

@@ -1,0 +1,115 @@
+.content-text {
+    padding-top: 48px;
+    h1 {
+        margin-bottom: 40px;
+    }
+    h3 {
+        margin-bottom: 40px;
+    }
+}
+
+ .quicklink-entry {
+    padding: 0;
+    height: 80px;
+    margin-top: 16px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+    transition: $transition-01-linear;
+    a {
+        position: relative;
+        display: block;
+        padding-left: 26px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        span {
+            position: relative;
+            font-size: 1.313rem;
+            line-height: 1.313rem;
+            font-family: $f-bold;
+            text-transform: uppercase;
+            padding-left: 0;
+            transition:  $transition-01-linear;
+
+            &:before {
+                position: relative;
+                float: left;
+                left: 0;
+                top: 1px;
+                display: inline-block;
+                margin-right: 10px;
+                margin-bottom: 0px;
+                content: '';
+                background-image: url(../img/arrow-red.svg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                height: 17px;
+                width: 18px;
+                transition:  $transition-01-linear;
+            }
+        }
+        &:hover {
+            box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
+            transition: $transition-01-linear;
+            span {
+                color: $c-primary;
+            }
+        }
+    }
+ }
+
+
+ .lesson-intro {
+    padding-top: 60px;
+    h3 {
+        font-size: 1.313rem;
+        line-height: 1.625rem;
+        text-transform: uppercase;
+        font-family: $f-bold;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #CDD4D8;
+    }
+    h2 {
+        font-size: 2rem;
+        line-height: 2.188rem;
+        text-transform: uppercase;
+        font-family: $f-bold;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 1.313rem;
+        line-height: 1.688rem;  
+    }
+ }
+
+ .lesson-entry {
+    display: flex;
+    .image {
+        aspect-ratio: 1.33/1;
+        img {
+           @include img-objectfit;
+        }
+    }
+    .text {
+        padding-left: 30px;
+        h4 {
+            font-size: 1.313rem;
+            line-height: 1.313rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        p {
+           font-size: 1rem;
+           line-height: 1.313rem; 
+        }
+        .lesson-duration {
+            font-size: 0.875rem;
+            line-height: 1.313rem;
+
+            display: block;
+        }
+    }
+ }

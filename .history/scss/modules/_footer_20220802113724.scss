@@ -1,0 +1,24 @@
+footer {
+    height: 86px;
+    border-top: 6px solid $c-primary;
+    background-color: $c-black;
+
+    a {
+        font-size: 1rem;
+        font-family: $f-bold;
+        line-height: 1.5rem;
+        color: $c-white;
+    }
+
+    ul {
+        li {
+            a {
+                font-size: 1rem;
+                font-family: $f-regular;
+                line-height: 1.5rem;
+                color: $c-white; 
+            }
+        }
+    }
+
+}

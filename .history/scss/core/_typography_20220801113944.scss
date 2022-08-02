@@ -1,0 +1,166 @@
+$f-regular: 'Avant Garde Book';
+$f-medium: 'FK Grotesk Medium';
+$f-bold: 'Avant Garde Bold';
+
+html {
+    font-family: $f-regular;
+    font-size: 16px;
+    @media only screen and (max-width: $d-desktop-small) {
+        //font-size: 18px;
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+
+h1,
+.h1 {
+    position: relative;
+    font-size: 2rem;
+    line-height: 2.188rem;
+    display: block;
+    font-family: $f-bold;
+    text-transform: uppercase;
+    @media only screen and (max-width: $d-tablet-portrait) {
+
+
+    }
+    @media only screen and (max-width: $d-mobile) {
+
+    }
+}
+
+h2,
+.h2 {
+    position: relative;
+    font-size: 2rem;
+    line-height: 2.188rem;
+    display: block;
+    font-family: $f-bold;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: $d-tablet-portrait) {
+
+    }
+    @media only screen and (max-width: $d-mobile) {
+
+    }
+}
+
+h3,
+.h3 {
+    position: relative;
+    font-size: 2rem;
+    line-height: 2.1rem;
+    display: block;
+    font-family: $f-regular;
+}
+
+h4,
+.h4 {
+    position: relative;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    display: block;
+    font-family: $f-regular;
+}
+
+p,
+.p {
+    font-size: 1rem;
+    line-height: 1.05rem;
+    margin-bottom: 1.4rem;
+    @media only screen and (max-width: $d-mobile) {
+        font-size: .8rem;
+        line-height: .95rem;
+    }
+}
+
+strong {
+    font-family: $f-medium;
+}
+
+
+/* links */
+
+a {
+    text-decoration: none;
+    transition: $transition-03;
+    &:hover {
+        color: $c-black;
+        transition: $transition-03;
+    }
+    &:focus {
+        outline: none !important;
+    }
+}
+
+
+/* selected */
+
+::-moz-selection {
+    color: $c-white;
+    background: $c-black;
+}
+
+::selection {
+    color: $c-white;
+    background: $c-black;
+}
+
+.t-small {
+    font-size: 0.875rem;
+}
+
+.t-light {
+    font-weight: 300;
+}
+
+.t-regular {
+    font-weight: 400;
+}
+
+.t-semibold {
+    font-weight: 600;
+}
+
+.t-bold {
+    font-weight: 700 !important;
+}
+
+.t-italic {
+    font-style: italic;
+}
+
+.t-underline {
+    text-decoration: underline;
+}
+
+.t-no-underline {
+    text-decoration: none;
+}
+
+.t-uppercase {
+    text-transform: uppercase;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-mute,
+.t-muted {
+    color: $c-mute;
+}

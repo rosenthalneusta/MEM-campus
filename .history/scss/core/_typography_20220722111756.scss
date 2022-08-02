@@ -1,0 +1,166 @@
+html {
+    font-family: 'Avant Garde Book';
+    font-size: 20px;
+    @media only screen and (max-width: $d-desktop-small) {
+        //font-size: 18px;
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+$f-regular: 'Avant Garde Book';
+$f-medium: 'FK Grotesk Medium';
+$f-bold: 'Avant Garde Bold';
+h1,
+.h1 {
+    position: relative;
+    font-size: 3rem;
+    line-height: 3.1rem;
+    display: block;
+    font-family: $f-regular;
+    @media only screen and (max-width: $d-tablet-portrait) {
+
+        font-size: 2.25rem;
+        line-height: 2.363rem;
+    }
+    @media only screen and (max-width: $d-mobile) {
+        font-size: 1.75rem;
+        line-height: 1.9rem;
+    }
+}
+
+h2,
+.h2 {
+    position: relative;
+    font-size: 3rem;
+    line-height: 3.1rem;
+    letter-spacing: -0.02em;
+    display: block;
+    font-family: $f-regular;
+    @media only screen and (max-width: $d-tablet-portrait) {
+        font-size: 2.25rem;
+        line-height: 2.363rem;
+    }
+    @media only screen and (max-width: $d-mobile) {
+        font-size: 1.75rem;
+        line-height: 1.9rem;
+    }
+}
+
+h3,
+.h3 {
+    position: relative;
+    font-size: 2rem;
+    line-height: 2.1rem;
+    display: block;
+    font-family: $f-regular;
+}
+
+h4,
+.h4 {
+    position: relative;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    display: block;
+    font-family: $f-regular;
+}
+
+p,
+.p {
+    font-size: 1rem;
+    line-height: 1.05rem;
+    margin-bottom: 1.4rem;
+    @media only screen and (max-width: $d-mobile) {
+        font-size: .8rem;
+        line-height: .95rem;
+    }
+}
+
+strong {
+    font-family: $f-medium;
+}
+
+
+/* links */
+
+a {
+    text-decoration: none;
+    transition: $transition-03;
+    &:hover {
+        color: $c-black;
+        transition: $transition-03;
+    }
+    &:focus {
+        outline: none !important;
+    }
+}
+
+
+/* selected */
+
+::-moz-selection {
+    color: $c-white;
+    background: $c-black;
+}
+
+::selection {
+    color: $c-white;
+    background: $c-black;
+}
+
+.t-small {
+    font-size: 0.875rem;
+}
+
+.t-light {
+    font-weight: 300;
+}
+
+.t-regular {
+    font-weight: 400;
+}
+
+.t-semibold {
+    font-weight: 600;
+}
+
+.t-bold {
+    font-weight: 700 !important;
+}
+
+.t-italic {
+    font-style: italic;
+}
+
+.t-underline {
+    text-decoration: underline;
+}
+
+.t-no-underline {
+    text-decoration: none;
+}
+
+.t-uppercase {
+    text-transform: uppercase;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-mute,
+.t-muted {
+    color: $c-mute;
+}

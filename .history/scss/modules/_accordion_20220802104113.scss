@@ -1,0 +1,172 @@
+
+    .content-accordion {
+        padding-left: 0;
+        padding-right: 0;
+        @include clearit;
+        border-top: 1px solid $c-grey;
+
+        &:last-of-type {
+            border-bottom: 1px solid $c-grey;
+        }
+
+        .accordion-trigger {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border: 1px solid $c-grey;
+
+            cursor: pointer;
+
+            h3,h4 {
+                font-size: 1rem;
+                line-height: 1.313rem;
+                font-family: $f-bold;
+                text-transform: uppercase;
+                max-width: calc(100% - 150px);
+
+            }
+
+        }
+
+        &.accordion-active {
+            .accordion-trigger {
+                //border-bottom: none;
+            }
+
+            .btn-accordion {
+                &:after {
+                    transform: rotate(45deg);
+                    transition: $transition-02;
+                }
+            }
+        }
+
+        .accordion-container {
+            display: none;
+
+            .accordion-content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+
+            .text {
+                padding-top: $spacing-40;
+                padding-bottom: 0;
+                padding-left: $spacing-10;
+                p {
+          
+                }
+
+
+            }
+
+
+        }
+
+        @media only screen and (max-width: $d-tablet-portrait) {
+            .accordion-trigger {
+                h3, h4 {
+                    font-size: 1.15rem;
+                    line-height: 1.208rem;
+                }
+
+                .btn-accordion {
+                    &:after {
+                        margin-left: $spacing-30;
+                    }
+                }
+
+            }
+
+            .accordion-container {
+                .cta {
+                    .button.button-extended {
+                        .button-container {
+                            max-width: 256px;
+
+                            .button-label {
+                                font-size: 1rem;
+                                line-height: 1.5rem;
+                            }
+                        }
+
+                    }
+                }
+
+                .accordion-content {
+                    .text {
+                        p {
+                            font-size: .8rem;
+                            line-height: .95rem;
+                            padding-right: $spacing-100;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        @media only screen and (max-width: $d-mobile) {
+            .accordion-trigger {
+                padding: 20px 0 10px 0px;
+                h3,h4 {
+                    font-size: 1.05rem;
+                    line-height: 1.103rem;
+                    max-width: calc(100% - 60px);
+                }
+
+                .btn-accordion {
+                    width: 30px;
+                    text-indent: -999px;
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+
+            .accordion-container {
+                .accordion-content {
+                    .text {
+                        padding-top: $spacing-20;
+                        padding-left: 0;
+
+                        p {
+                            padding-right: 0;
+                            font-size: .8rem;
+                            line-height: .95rem;
+                        }
+                    }
+
+                    .cta {
+                        .button.button-extended {
+                            margin-bottom: 28px;
+                            margin-right: 28px;
+                            padding-right: $spacing-25;
+
+                            &:after {
+                                width: 28px;
+                                height: 28px;
+                                right: -28px;
+                                bottom: -28px;
+                            }
+
+                            .button-container {
+                                max-width: 100%;
+                                min-height: 130px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }

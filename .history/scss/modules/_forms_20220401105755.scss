@@ -1,0 +1,11 @@
+/* inputs */
+
+input {
+  font-size: 1rem;
+  &:focus {
+      outline: none;
+  }
+  &:required, &:invalid  {
+      box-shadow: none !important;
+  }
+}

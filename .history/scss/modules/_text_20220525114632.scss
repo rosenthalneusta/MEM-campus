@@ -1,0 +1,406 @@
+.container-text {
+    &.one-col-text {
+        p {
+            &:last-of-type {
+                margin-bottom: $spacing-50;
+            }
+        }
+
+    }
+
+    &.two-col-headline-text {
+        p {
+            &:first-of-type {
+                margin-top: $spacing-85;
+            }
+
+            &:last-of-type {
+                margin-bottom: $spacing-150;
+            }
+        }
+
+
+    }
+
+    &.two-col-text {
+        p {
+            &:first-of-type {
+                margin-top: $spacing-25;
+            }
+
+            &:last-of-type {
+                margin-bottom: $spacing-150;
+            }
+        }
+
+    }
+
+    h1,
+    h2 {
+        margin-top: $spacing-25;
+        margin-bottom: $spacing-100;
+        padding-left: $spacing-20;
+        padding-right: $spacing-20;
+    }
+
+    h3, h4 {
+        padding-left: $spacing-20;
+        padding-right: $spacing-20;
+    }
+
+    p {
+
+        padding-left: $spacing-20;
+        padding-right: $spacing-20;
+
+        &:last-of-type {
+            margin-bottom: $spacing-50;
+        }
+
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+        li {
+            position: relative;
+            padding-left: 23px;
+            margin-bottom: 5px;
+            font-size: 1rem;
+            line-height: 1.05rem;
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 2px;
+                content: '';
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                display: inline-block;
+                background-color: $c-primary;
+
+            }
+        }
+    }
+
+    .teaser-text {
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .text-link {
+        .button {
+            margin-right: 30px;
+            &:hover {
+                box-shadow: none;
+                &:after {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $d-tablet-portrait) {
+
+        h1, h2 {
+            font-size: 2.25rem;
+            line-height: 2.363rem;
+            margin-bottom: $spacing-75;
+        }
+
+        h3 {
+            font-size: 1.9rem;
+            line-height: 1.9rem;
+        }
+
+        p {
+            font-size: .8rem;
+            line-height: .95rem;
+            padding-left: $spacing-15;
+        }
+
+        ul {
+            margin-left: $spacing-15;
+
+            li {
+                font-size: .8rem;
+                line-height: .95rem;
+                padding-left: $spacing-20;
+
+                &:before {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $d-mobile) {
+
+        //margin-bottom: $spacing-130;
+        h1,h2 {
+            font-size: 1.75rem;
+            line-height: 1.9rem;
+            padding-left: $spacing-10;
+            padding-right: $spacing-10;
+            margin-bottom: $spacing-50;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+            padding-left: $spacing-10;
+            padding-right: $spacing-10;
+            margin-bottom: $spacing-10;
+        }
+        h4{
+            padding-left: $spacing-10;
+            padding-right: $spacing-10;
+            margin-bottom: $spacing-10;
+        }
+
+        p {
+            padding-left: $spacing-10;
+            padding-right: $spacing-10;
+        }
+
+        ul {
+            margin-left: $spacing-10;
+
+            li {
+                font-size: .8rem;
+                line-height: .95rem;
+
+            }
+        }
+        .text-link {
+            margin-top: $spacing-50;
+            .button {
+                margin-right: 25px;
+                .button-container {
+                    .icon {
+                        top: 0;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.container-image {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.container-stiftungsrat {
+    .headline {
+        padding-top: $spacing-25;
+        padding-bottom: $spacing-100;
+    }
+
+    .col-md-offset-4 {
+        margin-left: 33.333%;
+    }
+
+    .stiftungsrat-entries {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        padding-bottom: $spacing-35;
+        padding-right: $spacing-20;
+
+        .stiftungsrat-entry {
+            width: calc(50% - 50px);
+            margin-bottom: $spacing-75;
+
+            .stiftungsrat-title {
+                font-size: 1rem;
+                font-family: $f-medium;
+                display: block;
+                margin-bottom: $spacing-25;
+
+                .stiftungsrat-ort {
+                    color: $c-grey-ui;
+                    font-family: $f-medium;
+                }
+            }
+
+            .stiftungsrat-position {
+                display: block;
+                font-size: 1rem;
+                color: $c-grey-ui;
+                font-family: $f-regular;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $d-tablet-portrait) {
+        .headline {
+            padding-left: $spacing-15;
+            padding-right: $spacing-15;
+            padding-bottom: $spacing-70;
+
+        }
+
+        .col-md-offset-4 {
+            margin-left: 0;
+        }
+
+        .stiftungsrat-entries {
+            padding-left: $spacing-20;
+
+            .stiftungsrat-entry {
+                width: calc(50% - 10px);
+                margin-bottom: $spacing-45;
+                padding: 0 $spacing-15 0 0;
+
+                .stiftungsrat-title {
+                    font-size: 0.9rem;
+                    line-height: 0.95rem;
+                }
+
+                .stiftungsrat-position {
+                    font-size: 0.9rem;
+                    line-height: 0.95rem;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $d-mobile) {
+        .headline {
+            padding-left: $spacing-10;
+            padding-right: $spacing-10;
+            padding-bottom: $spacing-40;
+            h2 {
+                font-size: 1.4rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        .stiftungsrat-entries {
+            padding-left: $spacing-10;
+
+            .stiftungsrat-entry {
+                width: 100%;
+                padding-right: 0;
+                margin-bottom: $spacing-30;
+                .stiftungsrat-title {
+                    font-size: 0.75rem;
+                    line-height: 0.788rem;
+                    margin-bottom: $spacing-10;
+                }
+                .stiftungsrat-position {
+                    font-size: 0.75rem;
+                    line-height: 0.788rem;
+                }
+            }
+        }
+    }
+}
+
+
+.headline-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: $spacing-90;
+    padding-bottom: $spacing-10;
+    padding-left: $spacing-20;
+    padding-right: $spacing-20;
+
+    h1,
+    h2 {
+        font-size: 5rem;
+        line-height: 4.75rem;
+        letter-spacing: -0.04em;
+        display: inline-block;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    a {
+        img {
+            height: 58px;
+            margin-top: $spacing-15;
+            transition: $transition-03;
+        }
+
+        &:hover {
+            img {
+                transform: translateX(5px);
+                transition: $transition-03;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $d-tablet-portrait) {
+        padding-bottom: 6px;
+
+        h1,
+        h2 {
+            font-size: 3.75rem;
+            line-height: 3.563rem;
+
+        }
+
+        a {
+            img {
+                height: 48px;
+                margin-top: 10px;
+            }
+        }
+
+
+    }
+
+    @media only screen and (max-width: $d-mobile) {
+        padding-left: $spacing-10;
+        padding-right: $spacing-10;
+        padding-top: $spacing-70;
+
+        h1,
+        h2 {
+            font-size: 3rem;
+            line-height: 2.85rem;
+            letter-spacing: -0.04em;
+            display: inline-block;
+            max-width: 85%;
+        }
+
+        a {
+            img {
+                height: 30px;
+                margin-top: 11px;
+            }
+        }
+    }
+}
+
+.headline {
+    padding-left: $spacing-20;
+    padding-right: $spacing-20;
+
+    @media only screen and (max-width: $d-mobile) {
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: $spacing-70;
+
+        h1,
+        h2 {
+            font-size: 3rem;
+            line-height: 2.85rem;
+        }
+    }
+}

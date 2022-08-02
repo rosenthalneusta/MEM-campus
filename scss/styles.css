@@ -1,0 +1,300 @@
+/* line 1, ../../xampp/htdocs/sass-test/scss/core/_css-reset.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 5, ../../xampp/htdocs/sass-test/scss/core/_css-reset.scss */
+.marvinn {
+  position: relative;
+  margin: auto; }
+
+/* line 10, ../../xampp/htdocs/sass-test/scss/core/_css-reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, hr,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 30, ../../xampp/htdocs/sass-test/scss/core/_css-reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, img {
+  display: block; }
+
+/* line 34, ../../xampp/htdocs/sass-test/scss/core/_css-reset.scss */
+body {
+  line-height: 1; }
+
+/* line 37, ../../xampp/htdocs/sass-test/scss/core/_css-reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 40, ../../xampp/htdocs/sass-test/scss/core/_css-reset.scss */
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/* line 44, ../../xampp/htdocs/sass-test/scss/core/_css-reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 47, ../../xampp/htdocs/sass-test/scss/core/_css-reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 52, ../../xampp/htdocs/sass-test/scss/core/_css-reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+ *	Layout
+ */
+/*
+ *	Colors
+ */
+/*
+ *	Typography
+ */
+/*
+ *  Spaces
+ */
+/*
+ *  Animation
+ */
+@font-face {
+  font-family: 'blenderbook';
+  src: url("assets/fonts/blender-book-webfont.woff2") format("woff2"), url("assets/fonts/blender-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'blender_heavy';
+  src: url("assets/fonts/blender-heavy-webfont.woff2") format("woff2"), url("assets/fonts/blender-heavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'blender_boldbold';
+  src: url("assets/fonts/blender-bold-webfont.woff2") format("woff2"), url("assets/fonts/blender-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'core_sans_a_45_regularregular';
+  src: url("assets/fonts/coresansa45-webfont.woff2") format("woff2"), url("assets/fonts/coresansa45-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 1, ../../xampp/htdocs/sass-test/scss/core/_typography.scss */
+html {
+  font-family: 'blender_heavy'; }
+
+/* line 6, ../../xampp/htdocs/sass-test/scss/core/_typography.scss */
+body {
+  font-family: 'blender_heavy'; }
+
+/* line 11, ../../xampp/htdocs/sass-test/scss/core/_typography.scss */
+h1,
+.h1 {
+  font-family: 'blender_heavy'; }
+
+/* line 1, ../../xampp/htdocs/sass-test/scss/modules/_header.scss */
+body {
+  font-family: 'blender_heavy'; }
+
+/* line 1, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+aside,
+footer {
+  position: relative;
+  background-color: #FFFFFF !important;
+  padding-top: 1.75rem;
+  margin-bottom: 0 !important; }
+
+/* line 8, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+.marvin {
+  position: absolute; }
+
+/* line 11, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+.joey {
+  position: relative; }
+
+/* line 14, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+.carsten {
+  position: absolute; }
+
+/* line 19, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+aside.company h2 {
+  margin-bottom: 1.75rem; }
+  /* line 21, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company h2.small-heading {
+    font-size: 1.5rem; }
+  /* line 24, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company h2.margin-top {
+    margin-top: 1rem; }
+    /* line 26, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+    aside.company h2.margin-top.margin-top-large {
+      margin-top: 2rem; }
+
+/* line 32, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+aside.company h3.small-heading {
+  font-size: 1rem;
+  color: #042D53; }
+  /* line 35, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company h3.small-heading.no-margin {
+    margin-bottom: 0; }
+
+/* line 39, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+aside.company h3.margin-top {
+  margin-top: 1rem; }
+  /* line 41, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company h3.margin-top.margin-top-large {
+    margin-top: 2rem; }
+
+/* line 47, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+aside.company .spacing {
+  margin-bottom: 1.75rem; }
+  /* line 49, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .spacing.small-heading {
+    font-size: 1.5rem; }
+  /* line 52, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .spacing.margin-top {
+    margin-top: 1rem; }
+    /* line 54, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+    aside.company .spacing.margin-top.margin-top-large {
+      margin-top: 2rem; }
+
+/* line 59, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+aside.company .company-link {
+  position: relative;
+  line-height: 1.1;
+  padding: 0.9375rem 1.875rem 0.5rem; }
+  /* line 63, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .company-link:before {
+    top: 0; }
+  /* line 66, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .company-link:after {
+    bottom: 0; }
+  /* line 69, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .company-link:hover, aside.company .company-link:focus, aside.company .company-link:active {
+    background: rgba(206, 237, 250, 0.5); }
+    /* line 73, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+    aside.company .company-link:hover .description, aside.company .company-link:focus .description, aside.company .company-link:active .description {
+      display: block; }
+  /* line 77, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .company-link h3 {
+    font-size: 1.5rem;
+    line-height: 1.1; }
+  /* line 81, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .company-link .icon {
+    color: #CEEDFA;
+    font-size: 4.063rem; }
+  /* line 85, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .company-link .description {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0;
+    color: black;
+    padding: 0 0.9375rem;
+    display: none;
+    word-break: break-word;
+    white-space: normal; }
+  /* line 95, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .company-link:before, aside.company .company-link:after {
+    content: "";
+    height: 0.0625rem;
+    width: 100%;
+    background: #CEEDFA;
+    left: 0;
+    position: absolute; }
+
+/* line 105, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+aside.company .content-img {
+  position: relative; }
+  /* line 107, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .content-img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%; }
+  /* line 113, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .content-img.content-img-small img {
+    width: 100%; }
+  /* line 116, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .content-img h3:not(:empty) {
+    background: rgba(255, 255, 255, 0.7); }
+  /* line 119, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .content-img h3,
+  aside.company .content-img .description {
+    position: absolute;
+    padding: 0.9375rem; }
+  /* line 125, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .content-img .info p {
+    margin: 0;
+    line-height: 1.2; }
+
+/* line 131, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+aside.company .company-service-row {
+  max-height: 12rem;
+  overflow: hidden; }
+  /* line 134, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .company-service-row p {
+    margin-bottom: 0.5rem; }
+  /* line 137, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .company-service-row #newsletter-data-protection-hint {
+    display: inline-block; }
+    /* line 139, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+    aside.company .company-service-row #newsletter-data-protection-hint p {
+      margin-top: 0.5rem; }
+  /* line 143, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  aside.company .company-service-row .background-alternate {
+    height: 12rem;
+    padding: 1.2rem 1rem;
+    position: relative; }
+    /* line 147, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+    aside.company .company-service-row .background-alternate h3 {
+      margin-bottom: 0.4rem; }
+    /* line 150, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+    aside.company .company-service-row .background-alternate .btn {
+      padding-right: 2.5rem;
+      text-align: left;
+      position: absolute;
+      right: 0; }
+    /* line 156, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+    aside.company .company-service-row .background-alternate input {
+      box-shadow: inset 0 0 10px #CCCCCC; }
+      /* line 158, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+      aside.company .company-service-row .background-alternate input.form-control {
+        width: 14rem; }
+
+/* line 167, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+#site-footer {
+  padding-bottom: 1.5rem; }
+  /* line 169, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  #site-footer .divider {
+    margin-top: 0; }
+  /* line 172, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  #site-footer .brand {
+    font-size: 1.125rem; }
+  /* line 175, ../../xampp/htdocs/sass-test/scss/modules/_footer.scss */
+  #site-footer .copy {
+    display: inline-block;
+    text-align: right;
+    width: 71.5%;
+    margin-bottom: 0; }
+
+/*# sourceMappingURL=styles.css.map */

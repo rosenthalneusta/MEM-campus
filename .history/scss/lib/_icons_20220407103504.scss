@@ -1,0 +1,122 @@
+/* icon font */
+
+// [class^="icon-"],
+// [class*=" icon-"] {
+//     /* use !important to prevent issues with browser extensions that change fonts */
+//     font-family: 'icomoon' !important;
+//     speak: none;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-variant: normal;
+//     text-transform: none;
+//     line-height: 1;
+//     /* Better Font Rendering =========== */
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+.icon {
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    &.icon-arrow-top-right-black {
+        height: 28px;
+        width: 28px;
+        transform: rotate(-45deg);
+        background-image: url(../img/icons/icon-arrow-right-black.svg);
+    }
+    &.icon-arrow-top-black {
+        height: 28px;
+        width: 28px;
+        background-image: url(../img/icons/icon-arrow-top-black.svg);
+    }
+    &.icon-arrow-bottom-black {
+        height: 28px;
+        width: 28px;
+        background-image: url(../img/icons/icon-arrow-bottom-black.svg);
+    }
+    &.icon-arrow-right-black {
+        height: 28px;
+        width: 28px;
+        background-image: url(../img/icons/icon-arrow-right-black.svg);
+    }
+    &.icon-arrow-left-black {
+        height: 28px;
+        width: 28px;
+        background-image: url(../img/icons/icon-arrow-left-black.svg);
+    }
+    &.icon-plus-black {
+        height: 22px;
+        width: 22px;
+        background-image: url(../img/icons/icon-plus-black.svg);
+    }
+    &.icon-cross-black {
+        height: 22px;
+        width: 22px;
+        transform: rotate(45deg);
+        background-image: url(../img/icons/icon-plus-black.svg);
+    }
+    &.icon-play-bright {
+        height: 60px;
+        width: 60px;
+        background-image: url(../img/icons/icon-play-bright.svg);
+    }
+    &.icon-pause-black {
+        height: 60px;
+        width: 60px;
+        background-image: url(../img/icons/icon-pause-black.svg);
+    }
+    &.icon-arrow-small-right-black {
+        height: 11px;
+        width: 6px;
+        background-image: url(../img/icons/icon-arrow-small-right-black.svg);
+    }
+    @media only screen and (max-width: $d-tablet-portrait) {
+        &.icon-arrow-top-right-black {
+            height: 21px;
+            width: 21px;
+        }
+        &.icon-arrow-top-black {
+            height: 21px;
+            width: 21px;
+        }
+        &.icon-arrow-bottom-black {
+            height: 21px;
+            width: 21px;
+        }
+        &.icon-arrow-right-black {
+            height: 21px;
+            width: 21px;
+        }
+        &.icon-arrow-left-black {
+            height: 21px;
+            width: 21px;
+        }
+        &.icon-plus-black {
+            height: 19px;
+            width: 19px;
+        }
+        &.icon-cross-black {
+            height: 19px;
+            width: 19px;
+        }
+        &.icon-play-bright {
+            height: 45px;
+            width: 45px;
+        }
+        &.icon-pause-black {
+            height: 45px;
+            width: 45px;
+        }
+    }
+    @media only screen and (max-width: $d-mobile) {
+        &.icon-play-bright {
+            height: 30px;
+            width: 30px;
+        }
+        &.icon-pause-black {
+            height: 30px;
+            width: 30px;
+        }
+    }
+}

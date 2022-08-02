@@ -1,0 +1,117 @@
+
+/*
+ *    Colors
+ */
+
+ $c-black: #000;
+
+ .c-black {
+	 color: $c-black;
+ }
+ .bg-black {
+	 background-color: $c-black;
+ }
+ 
+ $c-white: #fff;
+ 
+ .c-white {
+	 color: $c-white;
+ }
+ .bg-white {
+	 background-color: $c-white;
+ }
+ 
+ $c-primary: #D1FF17;
+ 
+ .c-primary {
+	 color: $c-primary;
+ }
+ .bg-primary {
+	 background-color: $c-primary;
+ }
+
+  
+ $c-primary-dark: #c0e747;
+ 
+ .c-primary-dark {
+	 color: $c-primary-dark;
+ }
+ .bg-primary-dark {
+	 background-color: $c-primary-dark;
+ }
+
+
+
+ 
+ $c-secondary: #96AFB9;
+ 
+ .c-secondary {
+	 color: $c-secondary;
+ }
+ .bg-secondary {
+	 background-color: $c-secondary;
+ }
+ 
+  
+ $c-grey: #C4C4C4;
+ 
+ .c-grey {
+	 color: $c-grey;
+ }
+ .bg-grey {
+	 background-color: $c-grey;
+ }
+ 
+ $c-cta-grey: #F2F2F2;
+ 
+ .c-cta-grey {
+	 color: $c-cta-grey;
+ }
+ .bg-cta-grey {
+	 background-color: $c-cta-grey;
+ }
+
+ $c-grey-ui: #A7A7A7;
+ 
+ .c-grey-ui {
+	 color: $c-grey-ui;
+ }
+ .bg-grey-ui {
+	 background-color: $c-grey-ui;
+ }
+
+
+
+
+ $c-border-grey: #d1d1d1;
+ 
+ .c-border-grey {
+	 color: $c-border-grey;
+ }
+ .c-border-grey {
+	 background-color: $c-border-grey;
+ }
+ .border-color-grey {
+	 border-color: $c-border-grey;
+ }
+ 
+ $c-border-grey-light: #ebe7e7;
+ 
+ .c-border-grey-light {
+	 color: $c-border-grey-light;
+ }
+ .c-border-grey-light {
+	 background-color: $c-border-grey-light;
+ }
+ .border-color-grey-light {
+	 border-color: $c-border-grey-light;
+ }
+ 
+ $c-mute: #dddddd;
+ 
+ .c-mute {
+	 color: $c-mute;
+ }
+ .bg-mute {
+	 background-color: $c-mute;
+ }
